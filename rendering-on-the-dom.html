@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>React Practice</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      INSTRUCTIONS:
+
+      1)  Make your own functional component, called Mood.    
+      2)  The Mood component should return an h1 tag that says:
+          "I am excited to learn React!"
+      3)  Use ReactDOM to render your mood inside the root div,
+          and make sure you can see it on the screen.
+    -->
+    <script type="text/babel">
+      class Mood extends React.Component {
+          render() {
+              return (<h1>I am excited to learn React!</h1>);
+          }
+      }
+      ReactDOM.render(
+          <Mood />,
+          document.getElementById('root')
+      );
+      </script>
+  </body>
+</html>
